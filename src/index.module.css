@@ -1,0 +1,8 @@
+.test1 {
+  border: 1px solid red;
+}
+
+.test2 {
+  composes: test1;  /* 可以用这种方式实现 css module 的嵌套 */
+  background-color: skyblue;
+}

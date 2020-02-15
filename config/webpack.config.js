@@ -39,7 +39,7 @@ const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
 );
 
-// Check if TypeScript is setup
+// 项目根目录如果存在 tsconfig.json就启用ts
 const useTypeScript = fs.existsSync(paths.appTsConfig);
 
 // style files regexes

@@ -32,7 +32,6 @@ export default class ContextTest extends Component {
   }
   handle = (e, n = 1) => { // 参数默认值
     this.setState({ counter: this.state.counter + n })
-    console.log(e) // 事件对象
   }
   render() {
     return (
@@ -48,8 +47,6 @@ export default class ContextTest extends Component {
           <WithConsumerAndChild/>
           <WithConsumerAndChild/>
           <WithConsumerAndChild/>
-
-
         </Provider>
       </div>
     )

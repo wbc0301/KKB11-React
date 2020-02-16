@@ -3,7 +3,7 @@ import React from "react";
 // Dialog定义组件外观和行为
 function Dialog(props) {
   // 这里props.children代表了组件在使用时标签内部内容   children是什么？是合法js表达式
-  console.log(props.children);
+  // console.log(props.children);
   // 备选消息
   const messages = {
     foo: { title: "foo", content: "foo~" },

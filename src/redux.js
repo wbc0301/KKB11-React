@@ -1,8 +1,8 @@
 export function createStore(reducer, enhancer) {
   if (enhancer) { return enhancer(createStore)(reducer); } // 如果存在enhancer
 
-  let state = undefined;
-  
+  let state = undefined; 
+
   const onStateChangeCallbacks = []; // 回调函数数组
 
   function getState() {

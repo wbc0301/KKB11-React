@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import ReactDOM from 'react-dom';
 import * as redux from 'redux';
 import * as ReactRedux from 'react-redux';
@@ -13,7 +13,7 @@ console.log('ReactRedux:',ReactRedux);
 console.log('ReactRouterDom:',ReactRouterDom);
 
 ReactDOM.render(<ReactRedux.Provider store={store}><App/></ReactRedux.Provider>, document.getElementById('root'));
-
+ */
 /* 
 只使用 redux:       如：store/ReduxTest2.js
     store.getState(), store.dispatch(), store.subscribe 
@@ -28,3 +28,54 @@ ReactDOM.render(<ReactRedux.Provider store={store}><App/></ReactRedux.Provider>,
 
     原理：创建一个contest.Provider 从而只一次导入store
 */
+
+
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+import React, {Component} from './yuanLi/react';
+import ReactDOM from './yuanLi/react-dom';
+// import React from './yuanLi/kkreact'
+// import {render} from './yuanLi/kkreact/ReactDOM';
+
+class Comp2 extends Component {
+  // constructor(props) {
+  //   super(props);
+
+  //   this.state = {
+  //     msg: 'something'
+  //   }
+  // }
+  // componentDidMount() {
+  //   this.setState({msg:'dong~~~'})
+  // }
+  // onClick = ()=>{
+  //   this.setState({msg:'mua~~~'})
+  // }
+  render() {
+    return (
+      // <h2 onClick={this.onClick}>hi, class comp! {this.state.msg}</h2>
+      <h2>ssssss</h2>
+    )
+  }
+}
+
+function Comp(props) {
+  return (
+    <h2>hi, {props.name}</h2>
+  )
+}
+const jsx = (
+  <div id="demo">
+    <span>hi</span>
+    <div className="name">
+      <button>aa</button>
+    </div>
+    <Comp name="kaikeba"></Comp>
+    <Comp2></Comp2>
+  </div>
+)
+console.log(jsx);
+
+ReactDOM.render(jsx, document.getElementById('root'));
+

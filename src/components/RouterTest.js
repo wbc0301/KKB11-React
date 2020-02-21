@@ -19,7 +19,7 @@ function Detail({ match, history, location }) {
     </div>
   );
 }
-function ProductMgt(props) {  {/* 嵌套路由  即写即用 非常爽 */}
+function ProductMgt(props) {  // 嵌套路由  即写即用 非常爽 
   return (
     <div>
       <h3>ProductMgt</h3>

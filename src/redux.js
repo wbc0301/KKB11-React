@@ -14,7 +14,7 @@ export function createStore(reducer, enhancer) {
     return action;
   }
   function subscribe(cb) {
-    onStateChangeCallbacks.push(cb);
+    onStateChangeCallbacks.push(cb); // 订阅变更
   }
 
   dispatch({ type: "@IMOOC/KKB-REDUX" });   // 初始化状态

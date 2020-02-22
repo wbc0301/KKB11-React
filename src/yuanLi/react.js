@@ -1,3 +1,17 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import * as redux from 'redux';
+import * as ReactRedux from 'react-redux';
+import * as ReactRouterDom from "react-router-dom";
+
+console.log('React:',React);
+console.log('ReactDOM:',ReactDOM);
+console.log('redux:',redux);
+console.log('ReactRedux:',ReactRedux);
+console.log('ReactRouterDom:',ReactRouterDom);
+
+
+
 function createElement(type, props, ...children) {
   //   console.log(arguments);
   props.children = children;

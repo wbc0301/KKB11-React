@@ -1,6 +1,6 @@
 export default function initVNode(vnode) {
   let { vtype } = vnode;
-  if (!vtype) { // 是文本节点
+  if (!vtype) { // 文本节点
     return document.createTextNode(vnode);
   }
   if (vtype === 1) {  // 原生元素

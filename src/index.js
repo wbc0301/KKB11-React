@@ -30,15 +30,10 @@ ReactDOM.render(<ReactRedux.Provider store={store}><App/></ReactRedux.Provider>,
 */
 
 
-
-// import React from 'react';
-// import ReactDOM from 'react-dom';
 import React, {Component} from './yuanLi/react';
 import ReactDOM from './yuanLi/react-dom';
-// import React from './yuanLi/kkreact'
-// import {render} from './yuanLi/kkreact/ReactDOM';
 
-class Comp2 extends Component {
+class ComponentClass extends Component {
   // constructor(props) {
   //   super(props);
 
@@ -60,7 +55,7 @@ class Comp2 extends Component {
   }
 }
 
-function Comp(props) {
+function ComponentFunction(props) {
   return (
     <h2>hi, {props.name}</h2>
   )
@@ -71,8 +66,8 @@ const jsx = (
     <div className="name">
       <button>aa</button>
     </div>
-    <Comp name="kaikeba"></Comp>
-    <Comp2></Comp2>
+    <ComponentFunction name="kaikeba"></ComponentFunction>
+    <ComponentClass></ComponentClass>
   </div>
 )
 console.log(jsx);
